@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $main-white-muted;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: $main-bg;
+    scroll-behavior: smooth;
+}
+
+.grid-container {
+    display: grid;
+    //grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+        //grid-template-rows: 6rem 100vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        //grid-template-rows: 6rem calc(100vh - 6rem);
+    }
+}
+
+.container {
+    display: block;
+    max-width: 112rem;
+    margin: 0 auto;
+    width: 100%
+}
+
+.video-preview {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding-top: 2rem;
+    }
+}
+
+a:link, a:visited {
+    color: $main-yellow;
+}
+
+.section-title {
+    flex: 1;
+    padding-right: 3rem;
+
+    & h3 {
+        position: sticky;
+        top: 10rem;
+        margin: 0;
+        padding: 0;
+        font-size: 4.6rem;
+        font-weight: 700;
+        color: $main-white;
+        margin-top: -0.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.section-content {
+    flex: 0 0 75%;
+}

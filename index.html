@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
+
+    <title>Hayden Morran | Web Developer &amp; UX Designer</title>
+</head>
+<body id="home">
+    <div class="grid-container">
+        <div class="header grid-container">
+            <header class=" navigation">
+                <a href="#home" class="active"><img src="images/logo.svg" alt="Hayden Morran Logo"></a>
+                <nav class="nav-bar">
+                    <button class="icon ion-ios-menu mobile-menu"></button>
+                    <ul class="desktop-menu">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <ul class="mobile-menu-content">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </div>
+        <section class="hero">
+            <div class="intro">
+                <h1 class="intro__title">Hayden Morran</h1>
+                <h2 class="intro__subtitle">Web Developer & UX Designer from Melbourne</h2>
+            </div>
+        </section>
+        <div class="intro-image">
+        </div>
+        <section class="about" id="about">
+            <div class="section-title">
+                <h3>About</h3>
+            </div>
+            <div class="section-content">
+                <p class="about-info">I was originally interested in graphic design, gaining an Advanced Diploma of Graphic Design & Multimedia at Tractor Design School. I combine my self-taught web development and design skills to build beautiful and user-friendly digital interfaces. </p>
+                <h4 class="about-info__subtitle">Expertise</h4>
+                <div class="expertise">
+                    <div class="expertise--item">
+                        <i class="icon ion-ios-body"></i>
+                        <h4 class="expertise--item__title">User Experience</h4>
+                        <p class="expertise--item__text">I care about the details, from product strategy to system design and UX.</p>
+                    </div>
+                    <div class="expertise--item">
+                        <i class="icon ion-ios-desktop"></i>
+                        <h4 class="expertise--item__title">Front-End Development</h4>
+                        <p class="expertise--item__text">Bringing concepts to life using the best practices with the core web technologies HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="expertise--item">
+                        <i class="icon ion-logo-nodejs"></i>
+                        <h4 class="expertise--item__title">Back-End Development</h4>
+                        <p class="expertise--item__text">To build high perfomant web apps. Technologies I love to work with are Node, Express and MongoDB.</p>
+                    </div>
+                    <div class="expertise--item">
+                        <i class="icon ion-ios-finger-print"></i>
+                        <h4 class="expertise--item__title">Branding</h4>
+                        <p class="expertise--item__text">I help craft the brand, prototype and iterate towards product market fit.</p>
+                    </div>
+                    <div class="expertise--item">
+                        <i class="icon ion-ios-camera"></i>
+                        <h4 class="expertise--item__title">Photography</h4>
+                        <p class="expertise--item__text">I craft memorable photos, specialising in portrait and landscape photography.</p>
+                    </div>
+                    <div class="expertise--item">
+                        <i class="icon ion-ios-create"></i>
+                        <h4 class="expertise--item__title">Illustration</h4>
+                        <p class="expertise--item__text">Proficient in creating original vector-based illustrations and solve problems creatively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <div class="section-title">
+                <h3>Work</h3>
+            </div>
+            <div class="section-content">
+                <div class="project">
+                    <div class="project--item">
+                        <img src="images/spoobify-logo.svg" alt="Spoobify Logo" class="project--item__image">
+                        <h4 class="project--item__title">Spoobify</h4>
+                        <p class="project--item__text">I built a full-scale free to use music streaming service on the web, similar to Spotify. Allowing users to create and customize their own playlists, and search for their favourite songs, artists and albums in real-time.</p>
+                        <a href="#modal-spoobify" class="project--item__link">Learn More</a>
+                    </div>
+                    <div class="project--item">
+                        <img src="images/quest-tours-logo.svg" alt="Quest Tours Logo" class="project--item__image">
+                        <h4 class="project--item__title">Quest Tours</h4>
+                        <p class="project--item__text">I wanted to master the entire modern back-end stack, so I completed the Node.js Bootcamp by Jonas Schmedtmann. To build a complete, beautiful & real-world application from start to finish (API and server-side rendered website)</p>
+                        <a href="#modal-quest-tours" class="project--item__link">Learn More</a>
+                    </div>
+                    <div class="project--item">
+                        <img src="images/jmf-electrical-logo.svg" alt="JMF Electrical Logo" class="project--item__image">
+                        <h4 class="project--item__title">JMF Electrical</h4>
+                        <p class="project--item__text">This local electrician was one of my first web development clients. Who needed a brochure website to help locals find his services who require electrical services.</p>
+                        <a href="#modal-jmf" class="project--item__link">Learn More</a>
+                    </div>                                        
+                    <div class="project--item">
+                        <img src="images/shortly-logo.svg" alt="Shortly URL Shortening Logo"
+                            class="project--item__image">
+                        <h4 class="project--item__title">Shortly URL Shortening</h4>
+                        <p class="project--item__text">Sharpening my skills with Frontend Mentors URL shortener challenge, to integrate with the rel.ink API and get it looking as close to the design as possible.</p>
+                        <a href="#modal-shortly" class="project--item__link">Learn More</a>
+                    </div>
+                    <div class="project--item">
+                        <img src="images/bookmark-logo.svg" alt="Bookmark Logo"
+                            class="project--item__image">
+                        <h4 class="project--item__title">Bookmark Landing Page</h4>
+                        <p class="project--item__text">Sharpening my skills with Frontend Mentors Bookmark Landing Page challenge, to build the landing page to match the design.</p>
+                        <a href="#modal-bookmark" class="project--item__link">Learn More</a>
+                    </div>
+                    <div class="project--item">
+                        <img src="images/kekou-logo.svg" alt="Kekou Logo" class="project--item__image">
+                        <h4 class="project--item__title">Kekou Cocktail Menu</h4>
+                        <p class="project--item__text">I had Kekou reach out to me, who needed illustrations designed for their cocktail menu.</p>
+                        <a href="#modal-kekou" class="project--item__link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="connect">
+            <div class="section-title">
+                <h3>Connect</h3>
+            </div>
+            <div class="section-content">
+                <p class="connect-info">If you would like to get in contact with me, you can stalk me on LinkedIn or send an email at: <a href="mailto:hayden@aitch.co" target="_top">hayden@aitch.co</a></p>
+            </div>
+        </footer>
+
+        <div class="modal grid-container" id="modal-spoobify">
+            <a class="" href="#work"><i class="icon ion-ios-close-circle-outline modal-close"></i></a>
+            <div class="modal-container">
+                <div class="section-title modal-sticky-content">
+                    <img src="images/spoobify-logo.svg" alt="Spoobify Logo" class="project--item__image">
+                    <h4 class="project--item__title">Technologies Used</h4>
+                    <p class="project--item__text">HTML, CSS, JavaScript/jQuery, PHP and MySQL</p>
+                    <a href="https://spoobify.herokuapp.com/">Visit Spoobify</a>
+                </div>
+                <div class="section-content">                    
+                    <video controls muted loop class="video-preview">
+                        <source src="videos/spoobify-preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="modal-info">I wanted to improve my skills further as a web developer, developing a project similar to Spotify would be a really fun and interesting project to showcase a wide range of technical skills.</p>
+                    <p class="modal-info">In my Spoobify project, a user can create an account, create and customise their playlists. Control the songs with the usual controls of play/pause, previous/next song, shuffle and repeat.</p>
+                    <p class="modal-info">This web application wouldn't have been natively possible, all thanks to the Web Audio API.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal grid-container" id="modal-quest-tours">
+            <a class="" href="#work"><i class="icon ion-ios-close-circle-outline modal-close"></i></a>
+            <div class="modal-container">
+                <div class="section-title modal-sticky-content">
+                    <img src="images/quest-tours-logo.svg" alt="Spoobify Logo" class="project--item__image">
+                    <h4 class="project--item__title">Technologies Used</h4>
+                    <p class="project--item__text">HTML, CSS, JavaScript, Node, Express, and MongoDB</p>
+                    <a href="https://questtours.herokuapp.com/">Visit Quest Tours</a>
+                </div>
+                <div class="section-content">
+                    <video controls muted loop class="video-preview">
+                        <source src="videos/spoobify-preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="modal-info">After completing this fast, scalable, feature-rich web application. I have mastered the fundamentals of Node.js, on how it works behind the scenes by understanding the event loop, blocking vs non-blocking code, event-driven architecture, streams, modules, etc.</p>
+                    <p class="modal-info">The web application has a complete modern authentication with JSON Web Tokens, I've also implemented the best security practices with encryption, sanitization, and rate-limiting.</p>                    
+                    <p class="modal-info">I'm able to work with NoSQL data and model data in real-world situations, which I believe is a hugely important skill. Having built this web application, it's a great starting point for building applications in the future.</p>
+                </div>
+            </div>
+        </div>   
+
+        <div class="modal grid-container" id="modal-jmf">
+            <a class="" href="#work"><i class="icon ion-ios-close-circle-outline modal-close"></i></a>
+            <div class="modal-container">
+                <div class="section-title modal-sticky-content">
+                    <img src="images/jmf-electrical-logo.svg" alt="JMF Electrical Logo" class="project--item__image">
+                    <h4 class="project--item__title">Technologies Used</h4>
+                    <p class="project--item__text">HTML, CSS, JavaScript</p>
+                    <a href="https://aitchjames.github.io/jmfelec">Visit JMF Electrical</a>
+                </div>
+                <div class="section-content">
+                    <video controls muted loop class="video-preview">
+                        <source src="videos/spoobify-preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="modal-info">With this web development project for JMF Electrical, Jason needed a new website design to upgrade from a super basic website hosted on Wix.</p>
+                    <p class="modal-info">The website needed to be user friendly, responsive between desktop and mobile devices, a feature to allow mobile users to quickly call Jason with a tap of a button.</p>
+                    <p class="modal-info">Jason's website gained 60% more customers due to the new improvements to the design of the website and the improved user flow allowed potiential clients find the information they were seeking.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal grid-container" id="modal-shortly">
+            <a class="" href="#work"><i class="icon ion-ios-close-circle-outline modal-close"></i></a>
+            <div class="modal-container">
+                <div class="section-title modal-sticky-content">
+                    <img src="images/shortly-logo.svg" alt="My Social Network Logo"
+                        class="project--item__image">
+                    <h4 class="project--item__title">Technologies Used</h4>
+                    <p class="project--item__text">HTML, CSS, JavaScript</p>
+                    <a href="https://aitchjames.github.io/shortly">Visit Shortly</a>
+                </div>
+                <div class="section-content">
+                    <video controls muted loop class="video-preview">
+                        <source src="videos/spoobify-preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="modal-info">To improve my skills further after the Spoobify project, completing a project like Facebook would be a fun challenge to learn how chat systems/news feeds would work with databases. </p>
+                    <p class="modal-info">With this project it allows the user to create their own account, to then create and customise their own playlists. Control the songs with the usual controls of play/pause, previous/next song, shuffle and repeat.</p>
+                </div>
+            </div>
+        </div>  
+
+        <div class="modal grid-container" id="modal-bookmark">
+            <a class="" href="#work"><i class="icon ion-ios-close-circle-outline modal-close"></i></a>
+            <div class="modal-container">
+                <div class="section-title modal-sticky-content">
+                    <img src="images/bookmark-logo.svg" alt="My Social Network Logo"
+                        class="project--item__image">
+                    <h4 class="project--item__title">Technologies Used</h4>
+                    <p class="project--item__text">HTML, CSS, JavaScript</p>
+                    <a href="https://aitchjames.github.io/bookmark">Visit Bookmark</a>
+                </div>
+                <div class="section-content">
+                    <video controls muted loop class="video-preview">
+                        <source src="videos/spoobify-preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="modal-info">To improve my skills further after the Spoobify project, completing a project like Facebook would be a fun challenge to learn how chat systems/news feeds would work with databases. </p>
+                    <p class="modal-info">With this project it allows the user to create their own account, to then create and customise their own playlists. Control the songs with the usual controls of play/pause, previous/next song, shuffle and repeat.</p>
+                </div>
+            </div>
+        </div>  
+
+        <div class="modal grid-container" id="modal-kekou">
+            <a class="" href="#work"><i class="icon ion-ios-close-circle-outline modal-close"></i></a>
+            <div class="modal-container">
+                <div class="section-title modal-sticky-content">
+                    <img src="images/kekou-logo.svg" alt="Kekou Logo" class="project--item__image">
+                    <h4 class="project--item__title">Applications Used</h4>
+                    <p class="project--item__text">Adobe Illustrator and InDesign</p>
+                </div>
+                <div class="section-content">
+                    <video controls muted loop class="video-preview">
+                        <source src="videos/spoobify-preview.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="modal-info">To improve my skills further as a web developer, completing a project like Spotify would be fun project to show a wide range of technical skills.</p>
+                    <p class="modal-info">With this project it allows the user to create their own account, to then create and customise their own playlists. Control the songs with the usual controls of play/pause, previous/next song, shuffle and repeat.</p>
+                    <img src="images/spoobify-screenshot-2.jpg" alt="" class="modal-images">
+                    <p class="modal-info">This application wouldn't have been natively possible, all thanks to the Web Audio API.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        class MobileMenu {
+            constructor() {
+                this.menuIcon = document.querySelector(".ion-ios-menu")
+                this.menuContent = document.querySelector(".mobile-menu-content")
+                this.events()
+            }
+
+            events() {
+                this.menuIcon.addEventListener("click", () => this.toggleTheMenu())
+            }
+
+            toggleTheMenu() {
+                this.menuIcon.classList.toggle("ion-ios-menu")
+                this.menuIcon.classList.toggle("ion-ios-close")
+                this.menuContent.classList.toggle("mobile-menu-content--is-visible")
+            }
+        }
+
+        new MobileMenu();
+    </script>
+</body>
+
+</html>
