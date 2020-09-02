@@ -1,0 +1,107 @@
+.work {
+
+    &-heading {
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            text-align: left;
+        }
+    }
+
+    &-subheading {
+        color: var(--color-text-light);
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 10rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            text-align: left;
+            margin-bottom: 5rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    &-item {
+        padding-bottom: 5rem;
+        margin-bottom: 5rem;
+        border-bottom: 1px solid var(--color-secondary);
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &__heading {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+
+            @media only screen and (max-width: $breakpoint-md) {
+                font-size: 2.6rem;
+            }
+        }
+
+        &__subheading {
+            font-size: 1.8rem;
+            color: var(--color-text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        &__labels {
+            display: flex;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        &__label {
+            display: inline-flex;
+            padding: 0.5rem 0.8rem;
+            line-height: 1;
+            align-items: center;
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+            font-size: 1.4rem;
+            border-radius: 0.4rem;
+            margin-right: 1rem;            
+            margin-bottom: 1rem;            
+            white-space: nowrap;
+        }
+
+        &__hero {
+            margin-bottom: 2rem;
+        }
+
+        &__description {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        &__button {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 1.8rem;
+            margin-right: 1rem;
+            border-radius: 0.4rem;
+            font-size: 1.6rem;
+            text-decoration: none;
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+            transition: filter 0.2s ease;
+
+            &:hover {
+                filter: brightness(0.90);
+            }
+
+            &-primary {
+                background-color: var(--color-primary);
+                color: var(--color-white);
+
+                &:hover {
+                    filter: brightness(1.25);
+                }
+            }
+        }
+    }
+}

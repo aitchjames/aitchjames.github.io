@@ -1,0 +1,88 @@
+.header {
+
+    & .container {
+        margin-top: 10rem;
+    }
+
+    &-bio {
+        display: grid;
+        grid-template-columns: 20rem 55rem;
+        grid-template-areas: 'bio-photo bio-content';
+        justify-content: center;
+        column-gap: 10rem;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            grid-template-columns: 20rem 1fr;
+            column-gap: 7.5rem;
+        }
+
+        @media only screen and (max-width: $breakpoint-md) {
+            grid-template-columns: 1fr;
+            grid-template-areas: 'bio-photo' 'bio-content';
+            justify-items: center;
+        }
+
+        &__photo {
+            grid-area: bio-photo;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 100%;
+
+            @media only screen and (max-width: $breakpoint-md) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &__content {
+            grid-area: bio-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media only screen and (max-width: $breakpoint-md) {
+                max-width: 90%;
+                text-align: center;
+            }
+
+            &-heading {
+                font-size: 3.8rem;
+                margin-bottom: 0.5rem;
+                opacity: 1;
+            }
+
+            &-subheading {
+                font-size: 2.4rem;
+                color: var(--color-text-light);
+                // max-width: 55rem;
+                line-height: 1.5;
+                margin-bottom: 1.5rem;
+            }
+
+            &-icons {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+                align-items: center;
+                gap: 1.5rem;
+
+                @media only screen and (max-width: $breakpoint-md) {
+                    margin-top: 2rem;
+                    grid-template-columns: repeat(auto-fit, minmax(2.2rem, 1fr));
+                    justify-items: center;
+                    gap: 0rem;
+                }
+
+                & svg {
+                    width: 2.2rem;
+                    height: auto;
+                    color: var(--color-text);
+                    opacity: 0.8;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

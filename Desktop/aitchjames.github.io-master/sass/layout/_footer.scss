@@ -1,0 +1,54 @@
+.footer {
+
+    & .container {
+        padding: 5rem 0 5rem 0;
+        display: grid;
+        grid-template-columns: min-content min-content;        
+        justify-content: space-between;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            grid-template-columns: 1fr; 
+        }
+    }
+
+    &-text {
+        white-space: nowrap;
+        font-size: 1.6rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            text-align: center; 
+        }
+
+        @media only screen and (max-width: $breakpoint-xsm) {
+            white-space: normal;
+        }
+    }
+
+    &-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: end;
+        column-gap: 2rem;
+        max-width: 40rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            max-width: none;
+            grid-template-columns: repeat(3, min-content);
+            justify-content: center;
+            justify-items: center;
+            margin-top: 2rem;
+            order: 2;
+        }
+
+        &__link {
+            width: 2.2rem;
+            height: auto;
+            color: var(--color-text);
+            transition: all 0.2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
